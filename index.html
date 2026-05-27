@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PANOTECH 3D - Virtual Tour Services</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#0b0b0b;
+    color:white;
+}
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1920&auto=format&fit=crop') center/cover;
+}
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+.hero p{
+    font-size:22px;
+    max-width:700px;
+}
+.btns{
+    margin-top:30px;
+}
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    margin:10px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.primary{
+    background:#00d5ff;
+    color:black;
+}
+.secondary{
+    border:2px solid white;
+    color:white;
+}
+section{
+    padding:80px 20px;
+}
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    max-width:1200px;
+    margin:auto;
+}
+.card{
+    background:#161616;
+    padding:30px;
+    border-radius:20px;
+}
+iframe{
+    width:100%;
+    height:500px;
+    border:none;
+    border-radius:20px;
+}
+.contact{
+    text-align:center;
+}
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #222;
+    color:#888;
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>PANOTECH 3D</h1>
+    <p>Professional 360° Virtual Tour & Google Business Walkthrough Services</p>
+
+    <div class="btns">
+        <a href="#demo" class="btn primary">View Demo</a>
+        <a href="https://wa.me/" class="btn secondary">WhatsApp</a>
+    </div>
+</div>
+
+<section>
+    <h2 style="text-align:center;font-size:40px;">Our Services</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>Google Business Tours</h3>
+            <p>Interactive walkthroughs for local businesses.</p>
+        </div>
+
+        <div class="card">
+            <h3>360 Photography</h3>
+            <p>Professional immersive 360° photography.</p>
+        </div>
+
+        <div class="card">
+            <h3>Real Estate Tours</h3>
+            <p>Luxury virtual property walkthroughs.</p>
+        </div>
+
+        <div class="card">
+            <h3>Hotel & Restaurant Tours</h3>
+            <p>Showcase your business with immersive experiences.</p>
+        </div>
+    </div>
+</section>
+
+<section id="demo">
+    <h2 style="text-align:center;font-size:40px;">Live Demo Tour</h2>
+
+    <div style="max-width:1100px;margin:auto;">
+        <iframe src="https://kuula.co/share/collection/7v3sR?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"></iframe>
+    </div>
+</section>
+
+<section class="contact">
+    <h2 style="font-size:45px;">Ready To Create Your Virtual Tour?</h2>
+    <p>Contact PANOTECH 3D today for immersive virtual experiences.</p>
+
+    <a href="https://wa.me/" class="btn primary">Contact Now</a>
+</section>
+
+<footer>
+© 2026 PANOTECH 3D • Virtual Tour Services
+</footer>
+
+</body>
+</html>
