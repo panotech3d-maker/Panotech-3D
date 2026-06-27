@@ -19,17 +19,17 @@
     :root{--cyan:#08d6df;--cyan2:#0f9aff;--dark:#020711;--card:rgba(13,28,44,.78);--muted:#aab8c5;--line:rgba(255,255,255,.12)}
     .container{width:min(1180px,92%);margin:auto}
     header{position:sticky;top:0;z-index:50;background:rgba(2,7,17,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
     .brand{display:flex;align-items:center;gap:12px}
-    .brand img{width:112px;height:78px;object-fit:cover;object-position:center;filter:drop-shadow(0 0 16px rgba(8,214,223,.22));border-radius:14px}
-    .brand-text strong{font-size:26px;letter-spacing:2px;line-height:1;display:block}
-    .brand-text span{font-size:13px;color:#fff;text-align:center;display:block;letter-spacing:4px}
+    .brand img{width:58px;height:58px;object-fit:cover;object-position:center;filter:drop-shadow(0 0 12px rgba(8,214,223,.28));border-radius:12px}
+    .brand-text strong{font-size:24px;letter-spacing:2.4px;line-height:1;display:block}
+    .brand-text span{font-size:12px;color:#fff;text-align:center;display:block;letter-spacing:4px;margin-top:2px}
     .menu{display:flex;align-items:center;gap:28px;color:#e8f0f6;font-weight:600;font-size:14px}
     .menu a{opacity:.92}
     .menu a:hover{color:var(--cyan)}
     .quote{padding:13px 21px;background:linear-gradient(135deg,var(--cyan),#0a8fd9);border-radius:9px;font-weight:800;box-shadow:0 8px 26px rgba(8,214,223,.22)}
     .hamb{display:none;font-size:28px;color:#fff}
-    .hero{position:relative;min-height:calc(100vh - 82px);display:flex;align-items:center;border-bottom:1px solid var(--line);overflow:hidden}
+    .hero{position:relative;min-height:calc(100vh - 76px);display:flex;align-items:center;border-bottom:1px solid var(--line);overflow:hidden}
     .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.45;transition:background-image .9s ease, opacity .5s ease}
     .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#020711 0%,rgba(2,7,17,.88) 28%,rgba(2,7,17,.38) 68%,rgba(2,7,17,.92) 100%),radial-gradient(circle at 72% 20%,rgba(8,214,223,.18),transparent 35%)}
     .hero-content{position:relative;z-index:2;padding:60px 0 38px}
@@ -96,7 +96,7 @@
     .footer-links{display:flex;gap:18px;flex-wrap:wrap}
     .whatsapp{position:fixed;right:18px;bottom:18px;z-index:60;background:#16c75b;color:white;border-radius:999px;padding:14px 18px;font-weight:900;box-shadow:0 18px 45px rgba(0,0,0,.35)}
     @media (max-width:920px){.menu{display:none}.hamb{display:block}.hero{min-height:auto}.industry-strip{grid-template-columns:repeat(2,1fr)}.tour-cards,.split,.contact-box{grid-template-columns:1fr}.services-grid,.gallery,.process,.stats{grid-template-columns:1fr 1fr}.embed{height:330px}}
-    @media (max-width:560px){.brand img{width:86px;height:62px}.brand-text strong{font-size:20px}.nav{height:72px}.hero-content{padding:40px 0 24px}.services-grid,.gallery,.process,.stats{grid-template-columns:1fr}.tour-card{padding:18px}.embed{height:280px}.btn{width:100%;justify-content:center}}
+    @media (max-width:560px){.brand img{width:48px;height:48px}.brand-text strong{font-size:20px}.nav{height:72px}.hero-content{padding:40px 0 24px}.services-grid,.gallery,.process,.stats{grid-template-columns:1fr}.tour-card{padding:18px}.embed{height:280px}.btn{width:100%;justify-content:center}}
   </style>
 </head>
 <body>
@@ -217,13 +217,13 @@
 
   <section id="contact">
     <div class="container contact-box">
-      <div><h2 class="section-title">Ready to showcase your space?</h2><p class="section-sub">Contact PANOTECH 3D for professional Google Business Virtual Tours and 360° Kuula Virtual Tours.</p><div class="contact-links"><a href="tel:+916351838958">📞 Call: +91 63518 38958</a><a href="https://wa.me/916351838958" target="_blank">💬 WhatsApp: +91 63518 38958</a><a href="mailto:panotech3d@gmail.com">✉️ Email: panotech3d@gmail.com</a></div></div>
-      <form onsubmit="event.preventDefault(); window.location.href='mailto:panotech3d@gmail.com?subject=PANOTECH 3D Website Inquiry&body=Name: '+encodeURIComponent(this.name.value)+'%0D%0APhone: '+encodeURIComponent(this.phone.value)+'%0D%0ARequirement: '+encodeURIComponent(this.message.value);"><input name="name" placeholder="Your Name" required><input name="phone" placeholder="Phone / WhatsApp" required><textarea name="message" placeholder="Tell us about your project"></textarea><button class="btn primary" type="submit">Send Inquiry</button></form>
+      <div><h2 class="section-title">Ready to showcase your space?</h2><p class="section-sub">Contact PANOTECH 3D for professional Google Business Virtual Tours and 360° Kuula Virtual Tours.</p><div class="contact-links"><a href="tel:+916355143423">📞 Call: +91 63551 43423</a><a href="https://wa.me/916355143423" target="_blank">💬 WhatsApp: +91 63551 43423</a><a href="mailto:info@panotech3d.com?cc=panotech3d@gmail.com">✉️ Email: info@panotech3d.com</a><a href="mailto:panotech3d@gmail.com">📩 Backup Email: panotech3d@gmail.com</a></div></div>
+      <form onsubmit="event.preventDefault(); window.location.href='mailto:info@panotech3d.com?cc=panotech3d@gmail.com?subject=PANOTECH 3D Website Inquiry&body=Name: '+encodeURIComponent(this.name.value)+'%0D%0APhone: '+encodeURIComponent(this.phone.value)+'%0D%0ARequirement: '+encodeURIComponent(this.message.value);"><input name="name" placeholder="Your Name" required><input name="phone" placeholder="Phone / WhatsApp" required><textarea name="message" placeholder="Tell us about your project"></textarea><button class="btn primary" type="submit">Send Inquiry</button></form>
     </div>
   </section>
 </main>
 <footer><div class="container footer-wrap"><p>© 2026 PANOTECH 3D. All rights reserved.</p><div class="footer-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms & Conditions</a></div></div></footer>
-<a class="whatsapp" href="https://wa.me/916351838958" target="_blank">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/916355143423" target="_blank">WhatsApp</a>
 <script>
 const slides=[
   {title:'Real Estate',sub:'Property virtual tours',img:'real-estate-exterior.png'},{title:'Office Spaces',sub:'Corporate interiors',img:'residential-interior.png'},{title:'Restaurant & Café',sub:'Ambience that attracts',img:'restaurant-area.png'},{title:'Industrial',sub:'Factories & infrastructure',img:'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1600&auto=format&fit=crop'},{title:'Hotels & Events',sub:'Hospitality spaces',img:'banquet-hall.png'},{title:'Healthcare',sub:'Clinics & hospitals',img:'lounge-seating.png'}
