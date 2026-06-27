@@ -3,234 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PANOTECH 3D | 360° Virtual Tours & Google Business Tours</title>
-  <meta name="description" content="PANOTECH 3D provides professional 360° virtual tours, Google Business Virtual Tours, Kuula tours and immersive digital experiences for real estate, offices, restaurants, industries, hotels and businesses." />
-  <meta name="keywords" content="360 virtual tour, Google Business Virtual Tour, Kuula virtual tour, real estate virtual tour, office virtual tour, Ahmedabad virtual tour, Panotech 3D" />
-  <meta property="og:title" content="PANOTECH 3D | Professional 360° Virtual Tours" />
-  <meta property="og:description" content="Bring your business space to life with immersive 360° virtual tour solutions." />
-  <meta property="og:image" content="Panotech3D_Logo.png" />
-  <link rel="icon" href="Panotech3D_Logo.png" />
+  <title>360 Virtual Tour Ahmedabad | Google Business Virtual Tour Ahmedabad | PANOTECH 3D</title>
+  <meta name="description" content="PANOTECH 3D provides Google Business Virtual Tours and 360° Virtual Tours in Ahmedabad for real estate, offices, restaurants, hotels, schools, hospitals, showrooms and industries." />
+  <meta name="keywords" content="360 virtual tour Ahmedabad, Google Business virtual tour Ahmedabad, virtual tour company Ahmedabad, real estate virtual tour Ahmedabad, office virtual tour Ahmedabad, restaurant virtual tour Ahmedabad" />
+  <meta property="og:title" content="PANOTECH 3D | 360 Virtual Tour Ahmedabad" />
+  <meta property="og:description" content="Professional Google Business Virtual Tours and 360° Virtual Tours for Ahmedabad businesses." />
+  <meta property="og:type" content="website" />
   <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:Inter,Arial,sans-serif;background:#020711;color:#fff;line-height:1.6;overflow-x:hidden}
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
-    :root{--cyan:#08d6df;--cyan2:#0f9aff;--dark:#020711;--card:rgba(13,28,44,.78);--muted:#aab8c5;--line:rgba(255,255,255,.12)}
-    .container{width:min(1180px,92%);margin:auto}
-    header{position:sticky;top:0;z-index:50;background:rgba(2,7,17,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img{width:58px;height:58px;object-fit:cover;object-position:center;filter:drop-shadow(0 0 12px rgba(8,214,223,.28));border-radius:12px}
-    .brand-text strong{font-size:24px;letter-spacing:2.4px;line-height:1;display:block}
-    .brand-text span{font-size:12px;color:#fff;text-align:center;display:block;letter-spacing:4px;margin-top:2px}
-    .menu{display:flex;align-items:center;gap:28px;color:#e8f0f6;font-weight:600;font-size:14px}
-    .menu a{opacity:.92}
-    .menu a:hover{color:var(--cyan)}
-    .quote{padding:13px 21px;background:linear-gradient(135deg,var(--cyan),#0a8fd9);border-radius:9px;font-weight:800;box-shadow:0 8px 26px rgba(8,214,223,.22)}
-    .hamb{display:none;font-size:28px;color:#fff}
-    .hero{position:relative;min-height:calc(100vh - 76px);display:flex;align-items:center;border-bottom:1px solid var(--line);overflow:hidden}
-    .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.45;transition:background-image .9s ease, opacity .5s ease}
-    .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#020711 0%,rgba(2,7,17,.88) 28%,rgba(2,7,17,.38) 68%,rgba(2,7,17,.92) 100%),radial-gradient(circle at 72% 20%,rgba(8,214,223,.18),transparent 35%)}
-    .hero-content{position:relative;z-index:2;padding:60px 0 38px}
-    .eyebrow{color:var(--cyan);font-weight:900;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:12px}
-    h1{font-size:clamp(42px,6vw,78px);line-height:1.05;max-width:760px;letter-spacing:-2px;margin-bottom:22px}
-    .grad{background:linear-gradient(135deg,var(--cyan),#168cff);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .lead{font-size:clamp(16px,2vw,21px);max-width:650px;color:#d6e4ee;margin-bottom:30px}
-    .btns{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:30px}
-    .btn{display:inline-flex;align-items:center;gap:10px;border-radius:10px;padding:14px 22px;font-weight:800;border:1px solid var(--line)}
-    .btn.primary{background:linear-gradient(135deg,var(--cyan),#0b84d8);color:white;border:none}
-    .btn.secondary{background:rgba(255,255,255,.06)}
-    .industry-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:28px}
-    .industry{min-height:86px;border:1px solid var(--line);border-radius:13px;overflow:hidden;position:relative;background-size:cover;background-position:center;cursor:pointer}
-    .industry::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(2,7,17,.9),rgba(2,7,17,.15))}
-    .industry.active{border-color:var(--cyan);box-shadow:0 0 0 1px rgba(8,214,223,.4),0 12px 30px rgba(8,214,223,.18)}
-    .industry span{position:absolute;left:12px;bottom:10px;font-weight:800;font-size:13px}
-    .dots{display:flex;gap:9px;justify-content:center;margin-top:16px}
-    .dot{width:9px;height:9px;border-radius:50%;background:#6d7885}
-    .dot.active{background:var(--cyan)}
-    section{padding:72px 0;border-bottom:1px solid var(--line)}
-    .section-title{font-size:34px;line-height:1.1;margin-bottom:12px}
-    .section-sub{color:var(--muted);max-width:650px;margin-bottom:30px}
-    .tour-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-    .tour-card{background:linear-gradient(180deg,rgba(18,39,59,.88),rgba(9,22,35,.86));border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.22)}
-    .tour-card h3{font-size:25px;margin-bottom:10px}
-    .tour-card p{color:#d2dee8;margin-bottom:18px}
-    .embed{position:relative;width:100%;height:420px;border-radius:16px;overflow:hidden;border:1px solid rgba(8,214,223,.25);background:#06101c}
-    .embed iframe{width:100%;height:100%;border:0}
-    .split{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
-    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-    .feature{background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:16px;padding:20px}
-    .feature b{color:#fff;display:block;margin-bottom:5px}
-    .feature span{color:var(--muted);font-size:14px}
-    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
-    .stat{background:linear-gradient(135deg,rgba(8,214,223,.16),rgba(255,255,255,.04));border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center}
-    .stat b{font-size:34px;color:#fff;display:block}
-    .stat span{color:var(--muted)}
-    .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-    .service{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;min-height:180px}
-    .service .icon{font-size:30px;margin-bottom:12px}
-    .service h3{font-size:19px;margin-bottom:8px}
-    .service p{color:var(--muted);font-size:14px}
-    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .project{background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:16px;overflow:hidden}
-    .project img{height:205px;width:100%;object-fit:cover}
-    .project-body{padding:16px}
-    .project h3{font-size:18px;margin-bottom:4px}
-    .project p{color:var(--muted);font-size:14px}
-    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    .step{padding:22px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.045)}
-    .step b{font-size:34px;color:var(--cyan);display:block;margin-bottom:8px}
-    .faq{display:grid;gap:12px}
-    details{background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:14px;padding:18px}
-    summary{cursor:pointer;font-weight:800}
-    details p{margin-top:10px;color:var(--muted)}
-    .contact-box{display:grid;grid-template-columns:1fr 1fr;gap:24px;background:linear-gradient(135deg,rgba(8,214,223,.12),rgba(255,255,255,.035));border:1px solid var(--line);border-radius:22px;padding:28px}
-    .contact-links{display:grid;gap:12px;margin-top:18px}
-    .contact-links a{padding:14px 16px;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:12px;color:#dcebf3}
-    form{display:grid;gap:12px}
-    input,textarea{width:100%;padding:15px 16px;border-radius:12px;border:1px solid var(--line);background:rgba(0,0,0,.25);color:#fff;font-family:inherit}
-    textarea{min-height:120px;resize:vertical}
-    footer{padding:30px 0;color:#93a6b6;background:#020711}
-    .footer-wrap{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
-    .footer-links{display:flex;gap:18px;flex-wrap:wrap}
-    .whatsapp{position:fixed;right:18px;bottom:18px;z-index:60;background:#16c75b;color:white;border-radius:999px;padding:14px 18px;font-weight:900;box-shadow:0 18px 45px rgba(0,0,0,.35)}
-    @media (max-width:920px){.menu{display:none}.hamb{display:block}.hero{min-height:auto}.industry-strip{grid-template-columns:repeat(2,1fr)}.tour-cards,.split,.contact-box{grid-template-columns:1fr}.services-grid,.gallery,.process,.stats{grid-template-columns:1fr 1fr}.embed{height:330px}}
-    @media (max-width:560px){.brand img{width:48px;height:48px}.brand-text strong{font-size:20px}.nav{height:72px}.hero-content{padding:40px 0 24px}.services-grid,.gallery,.process,.stats{grid-template-columns:1fr}.tour-card{padding:18px}.embed{height:280px}.btn{width:100%;justify-content:center}}
+    :root{--bg:#05080d;--panel:#0d1420;--panel2:#111c2a;--text:#f3f8ff;--muted:#9fb0c5;--cyan:#21d7ff;--blue:#0b7cff;--line:rgba(255,255,255,.10);--radius:24px;--shadow:0 24px 70px rgba(0,0,0,.42)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 15% 5%,rgba(33,215,255,.18),transparent 32%),linear-gradient(180deg,#05080d,#07111d 45%,#05080d);color:var(--text)}
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}.wrap{max-width:1180px;margin:auto;padding:0 20px}.top{position:sticky;top:0;z-index:50;background:rgba(5,8,13,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px}.brand img{width:54px;height:54px;object-fit:contain;border-radius:14px}.brand strong{font-size:19px;letter-spacing:.7px}.brand span{display:block;font-size:11px;color:var(--muted);letter-spacing:1.4px;text-transform:uppercase}.links{display:flex;gap:22px;color:#d7e4f2;font-size:14px}.cta{background:linear-gradient(135deg,var(--cyan),var(--blue));color:#00131a;padding:13px 18px;border-radius:999px;font-weight:800;box-shadow:0 12px 30px rgba(33,215,255,.22)}
+    .hero{min-height:calc(100vh - 78px);display:grid;align-items:center;position:relative;overflow:hidden}.slides{position:absolute;inset:0;z-index:-2}.slide{position:absolute;inset:0;opacity:0;animation:fade 32s infinite;background-size:cover;background-position:center}.slide:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,8,13,.96) 0%,rgba(5,8,13,.76) 45%,rgba(5,8,13,.30) 100%)}.s1{background-image:url('real-estate-exterior.png');animation-delay:0s}.s2{background-image:url('residential-interior.png');animation-delay:4s}.s3{background-image:url('restaurant-area.png');animation-delay:8s}.s4{background-image:url('lounge-seating.png');animation-delay:12s}.s5{background-image:url('banquet-hall.png');animation-delay:16s}.s6{background-image:url('bedroom-tour.png');animation-delay:20s}@keyframes fade{0%,18%{opacity:1}24%,100%{opacity:0}}
+    .heroGrid{padding:80px 0;display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid rgba(33,215,255,.35);background:rgba(33,215,255,.08);color:#baf4ff;border-radius:999px;padding:9px 13px;font-size:13px;font-weight:700}.hero h1{font-size:clamp(40px,6.2vw,78px);line-height:.98;margin:22px 0 18px;letter-spacing:-2.4px}.hero p{font-size:18px;line-height:1.75;color:#d4e3f5;max-width:720px}.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{padding:15px 22px;border-radius:999px;border:1px solid var(--line);font-weight:800}.btn.primary{background:linear-gradient(135deg,var(--cyan),var(--blue));color:#00131a;border:none}.btn.secondary{background:rgba(255,255,255,.06)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px}.stat{background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:18px;padding:18px}.stat b{font-size:25px}.stat small{display:block;color:var(--muted);margin-top:5px}.tourBox{background:rgba(13,20,32,.72);border:1px solid rgba(255,255,255,.13);border-radius:30px;padding:14px;box-shadow:var(--shadow)}.tourBox iframe{width:100%;height:430px;border:0;border-radius:20px}.tourBox p{font-size:14px;color:var(--muted);margin:12px 8px 4px}
+    section{padding:82px 0}.head{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:28px}.head h2{font-size:clamp(30px,4vw,48px);line-height:1.04;margin:0}.head p{max-width:540px;color:var(--muted);line-height:1.7}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.035));border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 18px 45px rgba(0,0,0,.18)}.card h3{margin:0 0 10px;font-size:20px}.card p{color:var(--muted);line-height:1.65;margin:0}.tag{display:inline-block;margin-bottom:14px;color:#99efff;background:rgba(33,215,255,.09);border:1px solid rgba(33,215,255,.24);padding:7px 10px;border-radius:999px;font-size:12px;font-weight:800}.services .card:first-child,.services .card:nth-child(2){grid-column:span 1}.gallery{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:16px}.shot{border-radius:24px;overflow:hidden;position:relative;min-height:240px;background:#111;border:1px solid var(--line)}.shot.big{grid-row:span 2}.shot img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.shot:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.82))}.shot div{position:absolute;left:18px;right:18px;bottom:18px;z-index:2}.shot h3{margin:0 0 6px}.shot p{margin:0;color:#cbd8e8;font-size:14px}.split{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}.iframeCard{background:var(--panel);border:1px solid var(--line);border-radius:28px;padding:14px;box-shadow:var(--shadow)}.iframeCard iframe{width:100%;height:430px;border:0;border-radius:18px}.areas{display:flex;flex-wrap:wrap;gap:10px}.area{padding:10px 13px;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:999px;color:#d8e6f5}.process{counter-reset:step}.process .card{position:relative}.process .card:before{counter-increment:step;content:'0' counter(step);display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--blue));color:#00131a;font-weight:900;margin-bottom:16px}.faq details{background:rgba(255,255,255,.055);border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin:12px 0}.faq summary{cursor:pointer;font-weight:800}.faq p{color:var(--muted);line-height:1.65}.contact{background:linear-gradient(135deg,rgba(33,215,255,.10),rgba(11,124,255,.08));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.contactBox{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}.infoLine{display:flex;gap:12px;align-items:center;margin:12px 0;color:#dbe8f7}.footer{padding:38px 0;color:var(--muted);background:#03060a}.footerGrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:20px}.float{position:fixed;right:18px;bottom:18px;background:#25d366;color:#00190a;padding:14px 18px;border-radius:999px;font-weight:900;z-index:99;box-shadow:0 20px 45px rgba(0,0,0,.35)}
+    @media(max-width:900px){.links{display:none}.heroGrid,.split,.contactBox{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr}.shot.big{grid-row:auto}.tourBox iframe,.iframeCard iframe{height:330px}.footerGrid{grid-template-columns:1fr}.hero{min-height:auto}.stats{grid-template-columns:1fr 1fr 1fr}}
+    @media(max-width:560px){.nav{height:auto;padding:12px 0}.brand img{width:46px;height:46px}.brand strong{font-size:16px}.cta{padding:10px 12px;font-size:13px}.grid,.stats{grid-template-columns:1fr}.heroGrid{padding:52px 0}.hero h1{letter-spacing:-1px}.head{display:block}.tourBox iframe,.iframeCard iframe{height:280px}}
   </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"PANOTECH 3D","description":"360 Virtual Tour and Google Business Virtual Tour services in Ahmedabad.","areaServed":"Ahmedabad, Gujarat, India","telephone":"+91 63551 43423","email":"info@panotech3d.com","url":"https://www.panotech3d.com"}</script>
 </head>
 <body>
-<header>
-  <div class="container nav">
-    <a class="brand" href="#home" aria-label="PANOTECH 3D Home">
-      <img src="Panotech3D_Logo.png" alt="PANOTECH 3D Logo" />
-      <div class="brand-text"><strong>PANOTECH</strong><span>3D</span></div>
-    </a>
-    <nav class="menu">
-      <a href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Project Gallery</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
-      <a class="quote" href="#contact">Get a Quote</a>
-    </nav>
-    <div class="hamb">☰</div>
-  </div>
-</header>
-<main id="home">
-  <section class="hero">
-    <div class="hero-bg" id="heroBg"></div>
-    <div class="container hero-content">
-      <div class="eyebrow">Immersive Experiences. Real Business Growth.</div>
-      <h1>Professional <span class="grad">360° Virtual Tours</span> for Real Spaces</h1>
-      <p class="lead">PANOTECH 3D helps real estate developers, offices and businesses showcase their spaces with immersive Google Business Virtual Tours and Kuula-based 360° experiences.</p>
-      <div class="btns"><a class="btn primary" href="#services">Explore Services →</a><a class="btn secondary" href="#portfolio">View Project Gallery ▶</a></div>
-      <div class="industry-strip" id="industries"></div><div class="dots" id="dots"></div>
-    </div>
-  </section>
-
-  <section id="services">
-    <div class="container">
-      <h2 class="section-title">Core Virtual Tour Solutions</h2>
-      <p class="section-sub">Two main services for PANOTECH 3D: Google Business Virtual Tour for Maps visibility and Kuula 360° Virtual Tour for websites, real estate and marketing.</p>
-      <div class="tour-cards">
-        <article class="tour-card">
-          <h3>Google Business Virtual Tour</h3>
-          <p>Publish your business space on Google Search and Google Maps with a professional 360° walkthrough. This section uses your approved Google Maps embed link.</p>
-          <div class="embed"><iframe src="https://www.google.com/maps/embed?pb=!4v1782586527586!6m8!1m7!1sCAoSHENJQUJJaEI3b0VVendPOVZkUlF3TWw0RHFnai0.!2m2!1d23.02442429709665!2d72.67335850392057!3f188.7828110681961!4f-7.531278658982259!5f0.7820865974627469" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Kauser Google Business Virtual Tour"></iframe></div>
-          <p style="margin-top:16px"><a class="btn primary" target="_blank" href="https://maps.app.goo.gl/nqYm7ZqCYWGwPHUZ6?g_st=aw">Open on Google Maps ↗</a></p>
-        </article>
-        <article class="tour-card">
-          <h3>360° Kuula Virtual Tour</h3>
-          <p>Interactive 360° virtual tour experience for real estate, offices, hotels, showrooms, hospitality and other business spaces.</p>
-          <div class="embed"><iframe src="https://kuula.co/share/collection/7MXcC?logo=-1&card=1&info=1&fs=1&vr=1&gyro=0&autorotate=0.83&autop=10&autopalt=1&thumbs=4&keys=0" title="PANOTECH 3D Kuula Virtual Tour" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen loading="lazy"></iframe></div>
-          <p style="margin-top:16px"><a class="btn primary" target="_blank" href="https://kuula.co/share/collection/7MXcC?logo=-1&card=1&info=1&fs=1&vr=1&gyro=0&autorotate=0.83&autop=10&autopalt=1&thumbs=4&keys=0">View Kuula Tour ↗</a></p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container split">
-      <div>
-        <h2 class="section-title">Real Estate & Office Spaces Are Our Main Focus</h2>
-        <p class="section-sub">PANOTECH 3D is designed for clients who want to present properties and business interiors professionally online. We create a real-feel virtual experience that helps customers understand the space before visiting.</p>
-        <div class="features">
-          <div class="feature"><b>Real Estate Projects</b><span>Apartment, villa, commercial property and sample flat virtual tours.</span></div>
-          <div class="feature"><b>Office & Corporate Spaces</b><span>Show meeting rooms, workspaces, reception and facilities with a premium digital walkthrough.</span></div>
-          <div class="feature"><b>Google Visibility</b><span>Improve business trust with Google Maps integrated virtual tours.</span></div>
-          <div class="feature"><b>Marketing Ready</b><span>Use tours on websites, WhatsApp, social media, proposals and client presentations.</span></div>
-        </div>
-      </div>
-      <div class="stats">
-        <div class="stat"><b>360°</b><span>Virtual Tours</span></div><div class="stat"><b>24/7</b><span>Online Viewing</span></div><div class="stat"><b>HD</b><span>Panoramic Images</span></div><div class="stat"><b>All</b><span>Devices Support</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2 class="section-title">Industries We Serve</h2>
-      <p class="section-sub">The homepage slider rotates across industries to give visitors a real-feel preview of how virtual tours can work for different business spaces.</p>
-      <div class="services-grid">
-        <div class="service"><div class="icon">🏠</div><h3>Real Estate</h3><p>Residential apartments, villas, sample flats and commercial properties.</p></div>
-        <div class="service"><div class="icon">🏢</div><h3>Office Spaces</h3><p>Corporate offices, meeting rooms, coworking spaces and business interiors.</p></div>
-        <div class="service"><div class="icon">🍽️</div><h3>Restaurant & Café</h3><p>Ambience-focused tours for dining spaces, cafés and hospitality areas.</p></div>
-        <div class="service"><div class="icon">🏭</div><h3>Industrial</h3><p>Factories, warehouses, production facilities and infrastructure spaces.</p></div>
-        <div class="service"><div class="icon">🏨</div><h3>Hotels & Resorts</h3><p>Rooms, lobbies, banquet halls and amenities for better bookings.</p></div>
-        <div class="service"><div class="icon">🏥</div><h3>Healthcare</h3><p>Clinics, hospitals, reception areas and patient-facing facilities.</p></div>
-        <div class="service"><div class="icon">🏫</div><h3>Education</h3><p>Schools, colleges, classrooms, labs and campus walkthroughs.</p></div>
-        <div class="service"><div class="icon">🛍️</div><h3>Retail & Showrooms</h3><p>Showrooms and stores that customers can explore online.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="portfolio">
-    <div class="container">
-      <h2 class="section-title">Project Gallery</h2>
-      <p class="section-sub">Gallery uses your provided project photos. No Setu name or Setu project is used.</p>
-      <div class="gallery">
-        <article class="project"><img src="real-estate-exterior.png" alt="Real estate apartment exterior virtual tour project"><div class="project-body"><h3>Real Estate Exterior</h3><p>Apartment / property virtual tour preview.</p></div></article>
-        <article class="project"><img src="residential-interior.png" alt="Residential interior 360 virtual tour"><div class="project-body"><h3>Residential Interior</h3><p>Interior 360° virtual tour experience.</p></div></article>
-        <article class="project"><img src="bedroom-tour.png" alt="Bedroom virtual tour with hotspots"><div class="project-body"><h3>Bedroom Walkthrough</h3><p>Room view with navigation hotspot preview.</p></div></article>
-        <article class="project"><img src="banquet-hall.png" alt="Banquet hall virtual tour"><div class="project-body"><h3>Banquet Hall</h3><p>Hospitality and event space virtual tour.</p></div></article>
-        <article class="project"><img src="restaurant-area.png" alt="Restaurant virtual tour"><div class="project-body"><h3>Restaurant Area</h3><p>Dining ambience and restaurant interior preview.</p></div></article>
-        <article class="project"><img src="lounge-seating.png" alt="Lounge seating virtual tour"><div class="project-body"><h3>Lounge Seating</h3><p>Premium seating and interior presentation.</p></div></article>
-      </div>
-    </div>
-  </section>
-
-  <section id="process">
-    <div class="container">
-      <h2 class="section-title">How It Works</h2><p class="section-sub">A simple professional workflow from planning to final delivery.</p>
-      <div class="process"><div class="step"><b>01</b><h3>Requirement</h3><p>We understand your space, purpose and platform requirement.</p></div><div class="step"><b>02</b><h3>360° Capture</h3><p>We capture high-quality panoramic images at your location.</p></div><div class="step"><b>03</b><h3>Editing & Tour</h3><p>We create a smooth virtual tour with navigation and presentation.</p></div><div class="step"><b>04</b><h3>Publish & Share</h3><p>Tour is delivered for Google Maps, Kuula, website and marketing use.</p></div></div>
-    </div>
-  </section>
-
-  <section id="faq">
-    <div class="container">
-      <h2 class="section-title">FAQ</h2>
-      <div class="faq">
-        <details open><summary>What is a 360° Virtual Tour?</summary><p>A 360° Virtual Tour allows customers to explore a business or property online with panoramic views and interactive navigation.</p></details>
-        <details><summary>What is a Google Business Virtual Tour?</summary><p>It is a 360° walkthrough published on Google Search and Google Maps, helping customers explore your business before visiting.</p></details>
-        <details><summary>Can the tour be added to my website?</summary><p>Yes, Kuula and Google Business tours can be embedded on your website and shared on WhatsApp, social media and email.</p></details>
-        <details><summary>Which businesses need virtual tours?</summary><p>Real estate, offices, restaurants, hotels, clinics, schools, factories, showrooms and event spaces can benefit from virtual tours.</p></details>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container contact-box">
-      <div><h2 class="section-title">Ready to showcase your space?</h2><p class="section-sub">Contact PANOTECH 3D for professional Google Business Virtual Tours and 360° Kuula Virtual Tours.</p><div class="contact-links"><a href="tel:+916355143423">📞 Call: +91 63551 43423</a><a href="https://wa.me/916355143423" target="_blank">💬 WhatsApp: +91 63551 43423</a><a href="mailto:info@panotech3d.com?cc=panotech3d@gmail.com">✉️ Email: info@panotech3d.com</a><a href="mailto:panotech3d@gmail.com">📩 Backup Email: panotech3d@gmail.com</a></div></div>
-      <form onsubmit="event.preventDefault(); window.location.href='mailto:info@panotech3d.com?cc=panotech3d@gmail.com?subject=PANOTECH 3D Website Inquiry&body=Name: '+encodeURIComponent(this.name.value)+'%0D%0APhone: '+encodeURIComponent(this.phone.value)+'%0D%0ARequirement: '+encodeURIComponent(this.message.value);"><input name="name" placeholder="Your Name" required><input name="phone" placeholder="Phone / WhatsApp" required><textarea name="message" placeholder="Tell us about your project"></textarea><button class="btn primary" type="submit">Send Inquiry</button></form>
-    </div>
-  </section>
-</main>
-<footer><div class="container footer-wrap"><p>© 2026 PANOTECH 3D. All rights reserved.</p><div class="footer-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms & Conditions</a></div></div></footer>
-<a class="whatsapp" href="https://wa.me/916355143423" target="_blank">WhatsApp</a>
-<script>
-const slides=[
-  {title:'Real Estate',sub:'Property virtual tours',img:'real-estate-exterior.png'},{title:'Office Spaces',sub:'Corporate interiors',img:'residential-interior.png'},{title:'Restaurant & Café',sub:'Ambience that attracts',img:'restaurant-area.png'},{title:'Industrial',sub:'Factories & infrastructure',img:'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1600&auto=format&fit=crop'},{title:'Hotels & Events',sub:'Hospitality spaces',img:'banquet-hall.png'},{title:'Healthcare',sub:'Clinics & hospitals',img:'lounge-seating.png'}
-];
-let current=0;const bg=document.getElementById('heroBg'),wrap=document.getElementById('industries'),dots=document.getElementById('dots');
-function render(){wrap.innerHTML='';dots.innerHTML='';slides.forEach((s,i)=>{const el=document.createElement('div');el.className='industry '+(i===current?'active':'');el.style.backgroundImage=`url("${s.img}")`;el.innerHTML=`<span>${s.title}</span>`;el.onclick=()=>{current=i;render();};wrap.appendChild(el);const d=document.createElement('div');d.className='dot '+(i===current?'active':'');dots.appendChild(d);});bg.style.backgroundImage=`url("${slides[current].img}")`;}
-render();setInterval(()=>{current=(current+1)%slides.length;render();},4200);
-</script>
+  <header class="top"><div class="wrap nav"><a class="brand" href="#home"><img src="Panotech3D_Logo.png" alt="PANOTECH 3D Logo"><div><strong>PANOTECH 3D</strong><span>360 Virtual Tours Ahmedabad</span></div></a><nav class="links"><a href="#services">Services</a><a href="#projects">Projects</a><a href="#kauser">Google Tour</a><a href="#areas">Ahmedabad</a><a href="#faq">FAQ</a></nav><a class="cta" href="tel:+916355143423">Get Quote</a></div></header>
+  <main id="home" class="hero"><div class="slides"><div class="slide s1"></div><div class="slide s2"></div><div class="slide s3"></div><div class="slide s4"></div><div class="slide s5"></div><div class="slide s6"></div></div><div class="wrap heroGrid"><div><span class="eyebrow">Ahmedabad Focused • Google Business & 360° Tours</span><h1>Ahmedabad's Professional 360° Virtual Tour Company</h1><p>PANOTECH 3D creates immersive virtual tours for real estate, offices, restaurants, hotels, showrooms, hospitals, schools and industrial spaces. Help your customers experience your business online with real-feel 360° walkthroughs.</p><div class="btns"><a class="btn primary" href="https://wa.me/916355143423" target="_blank">WhatsApp Quote</a><a class="btn secondary" href="#kauser">View Google Tour</a><a class="btn secondary" href="#projects">Project Gallery</a></div><div class="stats"><div class="stat"><b>360°</b><small>Immersive walkthroughs</small></div><div class="stat"><b>Ahmedabad</b><small>Primary service area</small></div><div class="stat"><b>Real Estate</b><small>& Offices main focus</small></div></div></div><div class="tourBox"><iframe src="https://kuula.co/share/collection/7MXcC?logo=-1&card=1&info=1&fs=1&vr=1&zoom=1&gyro=0&initload=0&autorotate=1.5&autop=10&autopalt=1&thumbs=1&margin=15" allowfullscreen loading="lazy"></iframe><p>Live 360° virtual tour preview by PANOTECH 3D.</p></div></div></main>
+  <section id="services" class="wrap"><div class="head"><h2>Virtual Tour Services in Ahmedabad</h2><p>We focus on business-ready digital experiences that can be shared on websites, WhatsApp, social media, Google Maps and sales presentations.</p></div><div class="grid services"><div class="card"><span class="tag">Google Maps</span><h3>Google Business Virtual Tour Ahmedabad</h3><p>Publish an interactive 360° walkthrough on Google Search and Google Maps to improve customer confidence and local visibility.</p></div><div class="card"><span class="tag">Kuula 360°</span><h3>360° Kuula Virtual Tour</h3><p>Website-ready virtual tours for real estate, offices, hospitality, institutions and commercial properties with smooth navigation.</p></div><div class="card"><span class="tag">Main Client</span><h3>Real Estate Virtual Tours</h3><p>Showcase apartments, villas, commercial projects and sample flats with immersive 360° property walkthroughs.</p></div><div class="card"><span class="tag">Main Client</span><h3>Office & Corporate Spaces</h3><p>Present office interiors, coworking spaces, meeting rooms and corporate facilities in a premium digital format.</p></div><div class="card"><h3>Restaurant & Café Tours</h3><p>Let customers explore your ambience, seating, reception and dining areas before they visit or book.</p></div><div class="card"><h3>Industrial & Factory Tours</h3><p>Show manufacturing units, warehouses and facilities professionally without requiring every client to visit physically.</p></div><div class="card"><h3>Hotel & Banquet Tours</h3><p>Display rooms, banquet halls, lounges and amenities to increase inquiries and bookings.</p></div><div class="card"><h3>School, Hospital & Showroom Tours</h3><p>Help parents, patients and customers understand your facility online with a clear virtual walkthrough.</p></div></div></section>
+  <section id="kauser" class="wrap"><div class="split"><div><span class="eyebrow">Kauser Google Business Tour</span><h2>Google Business Virtual Tour Preview</h2><p style="color:var(--muted);line-height:1.75">This section uses your Google Maps embed link. Customers can experience the business space directly through Google Maps-style 360° navigation.</p><div class="btns"><a class="btn primary" target="_blank" href="https://www.google.com/maps/embed?pb=!4v1782586527586!6m8!1m7!1sCAoSHENJQUJJaEI3b0VVendPOVZkUlF3TWw0RHFnai0.!2m2!1d23.02442429709665!2d72.67335850392057!3f188.7828110681961!4f-7.531278658982259!5f0.7820865974627469">Open Tour</a></div></div><div class="iframeCard"><iframe src="https://www.google.com/maps/embed?pb=!4v1782586527586!6m8!1m7!1sCAoSHENJQUJJaEI3b0VVendPOVZkUlF3TWw0RHFnai0.!2m2!1d23.02442429709665!2d72.67335850392057!3f188.7828110681961!4f-7.531278658982259!5f0.7820865974627469" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></div></section>
+  <section id="projects" class="wrap"><div class="head"><h2>Project Gallery</h2><p>Real project visuals added for gallery presentation. More Ahmedabad projects can be added as your portfolio grows.</p></div><div class="gallery"><div class="shot big"><img src="real-estate-exterior.png" alt="Real estate virtual tour Ahmedabad"><div><h3>Real Estate Virtual Tour</h3><p>Main target client segment for PANOTECH 3D.</p></div></div><div class="shot"><img src="residential-interior.png" alt="Residential interior 360 virtual tour"><div><h3>Residential Interior</h3><p>Immersive room walkthrough.</p></div></div><div class="shot"><img src="restaurant-area.png" alt="Restaurant virtual tour Ahmedabad"><div><h3>Restaurant Area</h3><p>Dining and ambience showcase.</p></div></div><div class="shot"><img src="lounge-seating.png" alt="Office and lounge virtual tour"><div><h3>Office / Lounge</h3><p>Corporate spaces and waiting areas.</p></div></div><div class="shot"><img src="banquet-hall.png" alt="Banquet hall virtual tour Ahmedabad"><div><h3>Banquet Hall</h3><p>Events and hospitality spaces.</p></div></div></div></section>
+  <section id="areas" class="wrap"><div class="head"><h2>We Serve Across Ahmedabad</h2><p>Local SEO-focused service areas for Ahmedabad and nearby business locations.</p></div><div class="areas"><span class="area">Satellite</span><span class="area">SG Highway</span><span class="area">Bopal</span><span class="area">South Bopal</span><span class="area">Naroda</span><span class="area">Nikol</span><span class="area">Maninagar</span><span class="area">Chandkheda</span><span class="area">Gota</span><span class="area">Science City</span><span class="area">Prahlad Nagar</span><span class="area">Vastrapur</span><span class="area">Bodakdev</span><span class="area">Gandhinagar</span></div></section>
+  <section class="wrap process"><div class="head"><h2>Our Process</h2><p>Simple workflow for businesses that want a professional virtual tour without technical complications.</p></div><div class="grid"><div class="card"><h3>Requirement</h3><p>We understand your business type, space size and publishing need.</p></div><div class="card"><h3>360° Capture</h3><p>High-quality panoramic images are captured with proper angles and coverage.</p></div><div class="card"><h3>Editing & Tour Build</h3><p>We prepare navigation, visuals, hotspots and tour presentation.</p></div><div class="card"><h3>Delivery & Sharing</h3><p>Your tour is delivered for website, Google Business, WhatsApp and marketing use.</p></div></div></section>
+  <section id="faq" class="wrap faq"><div class="head"><h2>Virtual Tour FAQ</h2><p>Common questions from Ahmedabad businesses before starting a 360° virtual tour.</p></div><details open><summary>What is a 360° Virtual Tour?</summary><p>A 360° Virtual Tour is an interactive digital walkthrough that allows customers to explore your space online from mobile, desktop or tablet.</p></details><details><summary>What is a Google Business Virtual Tour?</summary><p>It is a 360° tour published on Google Search and Google Maps, helping visitors explore your business before they visit.</p></details><details><summary>Which businesses in Ahmedabad can use virtual tours?</summary><p>Real estate, offices, restaurants, hotels, schools, hospitals, showrooms, banquet halls and industrial spaces can benefit from virtual tours.</p></details><details><summary>How long does delivery take?</summary><p>Timeline depends on the project size. Most small and medium projects can be delivered within a few business days after capture.</p></details><details><summary>Can the virtual tour be added to my website?</summary><p>Yes, Kuula and Google virtual tours can be embedded or linked on your website and shared through marketing channels.</p></details></section>
+  <section id="contact" class="contact"><div class="wrap contactBox"><div><h2>Ready to create your virtual tour in Ahmedabad?</h2><p style="color:var(--muted);line-height:1.75">Share your location, business type and requirement. We will guide you with the right virtual tour solution.</p><div class="btns"><a class="btn primary" href="https://wa.me/916355143423" target="_blank">WhatsApp Now</a><a class="btn secondary" href="mailto:info@panotech3d.com,panotech3d@gmail.com?subject=PANOTECH%203D%20Virtual%20Tour%20Inquiry">Send Email</a></div></div><div class="card"><div class="infoLine">📞 <a href="tel:+916355143423">+91 63551 43423</a></div><div class="infoLine">📧 <a href="mailto:info@panotech3d.com">info@panotech3d.com</a></div><div class="infoLine">📧 <a href="mailto:panotech3d@gmail.com">panotech3d@gmail.com</a></div><div class="infoLine">📍 Ahmedabad, Gujarat, India</div></div></div></section>
+  <footer class="footer"><div class="wrap footerGrid"><div><div class="brand"><img src="Panotech3D_Logo.png" alt="PANOTECH 3D Logo"><div><strong>PANOTECH 3D</strong><span>Virtual Tour Company Ahmedabad</span></div></div><p>Professional Google Business Virtual Tours and 360° Virtual Tours for Ahmedabad businesses.</p></div><div><h3>Services</h3><p>Google Business Virtual Tour<br>360° Kuula Virtual Tour<br>Real Estate Virtual Tour<br>Office & Commercial Virtual Tour</p></div><div><h3>Policies</h3><p><a href="privacy-policy.html">Privacy Policy</a><br><a href="terms.html">Terms & Conditions</a></p></div></div></footer>
+  <a class="float" href="https://wa.me/916355143423" target="_blank">WhatsApp</a>
 </body>
 </html>
