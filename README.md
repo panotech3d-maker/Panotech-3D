@@ -1,11 +1,13 @@
-# PANOTECH 3D v4.2 — Existing Repository Structure Fix
+# PANOTECH 3D v4.4 — Asset Path Fix
 
-Upload the CONTENTS of this package to the root of the existing `panotech3d-maker/Panotech-3D` repository.
+This package matches the existing GitHub structure:
 
-This version is specifically aligned to the existing repository structure:
-- `assets/css/style.css`
-- `assets/js/script.js`
-- `assets/images/`
-- `assets/360/`
+assets/
+  css/
+  js/
+  images/
+    360/
 
-Do not create a new repository or an extra outer folder.
+Upload the CONTENTS of this package to the root of the existing `Panotech-3D` repository.
+
+Do not create another nested repository folder.
